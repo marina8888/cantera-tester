@@ -13,8 +13,9 @@ To compile cantera from source:
 2. conda update -n base -c defaults conda
 3. conda activate <name of env>
 3. git clone <link to github repo>
-4. git checkout 3.0
+4. git checkout 3.0 or main
 5. install dependencies through anaconda following this url: https://cantera.org/compiling/compilation-reqs.html#sec-compilation-reqs
+This part is important! env.yaml install for the file, and pip install everything else.
 6. create build using the following config options: 
   scons build -j 8 python_package=full system_yamlcpp=y f90_interface=n skip_slow_tests=yes
 7. scons install
